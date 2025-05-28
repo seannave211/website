@@ -1,0 +1,33 @@
+body {
+    margin: 0 var(--margin-lr);
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    z-index: 1000;
+}
+
+main {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+#hero_desc {
+    max-width: 800px;
+}
+
+@media (max-width: 600px) {
+    #hero_section h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero_desc {
+        font-size: 1rem;
+    }
+}
